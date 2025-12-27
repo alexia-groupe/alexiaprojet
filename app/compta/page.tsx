@@ -1,127 +1,192 @@
+"use client";
 import Image from "next/image";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Section from "../../components/ui/Section";
+import SectionHeading from "../../components/ui/SectionHeading";
+import Button from "../../components/ui/Button";
 
 export default function Compta() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <header className="flex justify-between items-center px-8 py-4 bg-gray shadow-md fixed w-full top-0 z-50">
-        <div className="flex items-center space-x-3">
-          <Image src="/alexia-groupe.png" alt="Logo Alexia Groupe" width={150} height={150} />
-          <h1 className="text-2xl font-bold text-blue-700">Alexia Compta</h1>
-        </div>
-        <nav className="space-x-6 text-gray-700 font-medium">
-          <a href="/" className="hover:text-blue-600">Accueil</a>
-          <a href="/vtc" className="hover:text-blue-600">Alexia VTC</a>
-          <a href="/multiservices" className="hover:text-blue-600">Alexia Multiservices</a>
-        </nav>
-      </header>
+      <Header />
 
-      <main className="flex flex-col items-center justify-center text-center flex-grow pt-28 px-6">
-        <h2 className="text-4xl font-bold mb-4 text-blue-700">Expertise Comptable Professionnelle</h2>
-        <p className="text-lg text-gray-600 mb-8 max-w-3xl">
-          Alexia Compta vous accompagne dans la gestion de vos finances, la comptabilité et la fiscalité de votre entreprise.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-6 mt-8 max-w-6xl">
-          <Image src="/compta2.jpg" alt="Cabinet comptable" width={400} height={400} className="rounded-lg shadow" />
-          <Image src="/compta3.jpg" alt="Bureau comptabilité" width={400} height={400} className="rounded-lg shadow" />
-          <Image src="/compta4.jpg" alt="Équipe comptable" width={400} height={400} className="rounded-lg shadow" />
+      {/* Hero Section */}
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-primary text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/compta2.jpg"
+            alt="Expertise Comptable"
+            fill
+            className="object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-transparent"></div>
         </div>
 
-        <section className="mt-12 bg-white shadow-lg rounded-xl p-6 w-full max-w-4xl">
-          <h3 className="text-2xl font-semibold mb-4 text-blue-700">Nos Forfaits</h3>
-          <ul className="text-gray-700 space-y-2 text-left">
-            <li>💼 Forfait Basic – Comptabilité annuelle : 59€/mois</li>
-            <li>📊 Forfait Pro – Gestion + TVA + Bilan : 99€/mois</li>
-            <li>🏢 Forfait Premium – Tout inclus + conseils illimités : 149€/mois</li>
-          </ul>
-        </section>
- {/* SECTION TYPES D'ENTREPRISE */}
-        <section className="mt-12 bg-white-500 shadow-lg rounded-xl p-6 w-full max-w-4xl text-left">
-          <h3 className="text-3xl font-semibold mb-6 text-blue-700 text-center">Les différents types d'entreprise</h3>
-
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div className="bg-gray-200 p-4 rounded-xl font-bold text-blue-800">SASU</div>
-            <div className="bg-gray-200 p-4 rounded-xl font-bold text-blue-800">EURL</div>
-            <div className="bg-gray-200 p-4 rounded-xl font-bold text-blue-800">SARL</div>
-            <div className="bg-gray-200 p-4 rounded-xl font-bold text-blue-800">SAS</div>
-            <div className="bg-gray-200 p-4 rounded-xl font-bold text-blue-800">EI</div>
-            <div className="bg-gray-200 p-4 rounded-xl font-bold text-blue-800">Micro‑Entreprise</div>
-          </div>
-        </section>
-
-        <a
-          href="mailto:alexiaentreprise@gmail.com"
-          className="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold transition"
-        >
-   
-          📩 Demander un devis
-        </a>
-      </main>
-
-      {/* AVIS CLIENTS */}
-      <section className="mt-16 w-full max-w-6xl mx-auto px-6">
-        <h3 className="text-3xl font-bold text-center mb-8 text-blue-700">
-          ⭐ Avis de nos clients – Alexia Compta
-        </h3>
-
-        <div className="grid md:grid-cols-3 gap-6">
-
-          {/* AVIS 1 */}
-          <div className="bg-white shadow-lg rounded-xl p-6">
-            <div className="flex items-center mb-3">
-              <Image src="/client4.png" alt="Client" width={50} height={50} className="rounded-full" />
-              <div className="ml-3">
-                <p className="font-semibold">Marc D.</p>
-                <p className="text-yellow-500">★★★★★</p>
-              </div>
-            </div>
-            <p className="text-gray-600">
-              Une équipe comptable réactive et très claire dans ses explications. Je recommande.
-            </p>
-          </div>
-
-          {/* AVIS 2 */}
-          <div className="bg-white shadow-lg rounded-xl p-6">
-            <div className="flex items-center mb-3">
-              <Image src="/client5.png" alt="Client" width={50} height={50} className="rounded-full" />
-              <div className="ml-3">
-                <p className="font-semibold">Amina T.</p>
-                <p className="text-yellow-500">★★★★★</p>
-              </div>
-            </div>
-            <p className="text-gray-600">
-              Très pro ! Ils m’ont aidée à structurer ma micro-entreprise dès le début.
-            </p>
-          </div>
-
-          {/* AVIS 3 */}
-          <div className="bg-white shadow-lg rounded-xl p-6">
-            <div className="flex items-center mb-3">
-              <Image src="/client6.png" alt="Client" width={50} height={50} className="rounded-full" />
-              <div className="ml-3">
-                <p className="font-semibold">Julien P.</p>
-                <p className="text-yellow-500">★★★★★</p>
-              </div>
-            </div>
-            <p className="text-gray-600">
-              Service comptable impeccable, toujours disponible pour répondre à mes questions.
-            </p>
-          </div>
-
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Expertise Comptable <span className="text-accent">Professionnelle</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Alexia Compta vous accompagne avec rigueur dans la gestion de vos finances, votre conformité fiscale et le développement de votre entreprise.
+          </p>
+          <Button href="#forfaits" variant="primary">
+            Voir nos forfaits
+          </Button>
         </div>
       </section>
 
-      <footer className="bg-gray-900 text-white py-8 mt-12">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="mb-2">📞 06 52 75 52 94</p>
-          <div className="flex justify-center space-x-6 mt-4">
-            <a href="https://www.facebook.com/Alexiacompta" target="_blank"><Image src="/facebook.png" alt="Facebook" width={28} height={28} /></a>
-            <a href="https://linkedin.com/company/alexiagroupe" target="_blank"><Image src="/linkedin.png" alt="LinkedIn" width={28} height={28} /></a>
-            <a href="https://instagram.com/alexiagroupe" target="_blank"><Image src="/instagram.png" alt="Instagram" width={28} height={28} /></a>
+      {/* Forfaits Section */}
+      <Section id="forfaits" className="bg-white">
+        <SectionHeading
+          title="Nos Solutions d'Accompagnement"
+          subtitle="Des forfaits adaptés à chaque étape de votre croissance"
+        />
+
+        <div className="grid md:grid-cols-3 gap-8 mt-12 max-w-6xl mx-auto">
+          {/* Basic */}
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col hover:shadow-xl transition-shadow relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-gray-300"></div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Forfait Basic</h3>
+            <p className="text-gray-500 text-sm mb-6">Pour les petites structures</p>
+            <div className="text-4xl font-bold text-primary mb-6">
+              59€<span className="text-lg text-gray-500 font-normal">/mois</span>
+            </div>
+            <ul className="space-y-4 mb-8 text-gray-600 flex-grow">
+              <li className="flex items-center gap-3">
+                <span className="text-green-500">✓</span> Comptabilité annuelle
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-green-500">✓</span> Déclarations fiscales simples
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-green-500">✓</span> Support par email
+              </li>
+            </ul>
+            <Button href="mailto:alexiaentreprise@gmail.com?subject=Devis Forfait Basic" variant="secondary" className="w-full justify-center">
+              Choisir ce forfait
+            </Button>
           </div>
-          <p className="text-gray-400 text-sm mt-4">© 2025 Alexia Compta - Tous droits réservés</p>
+
+          {/* Pro */}
+          <div className="bg-primary text-white rounded-2xl shadow-xl p-8 flex flex-col transform md:-translate-y-4 relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-accent text-white text-xs font-bold px-3 py-1 rounded-bl-lg">POPULAIRE</div>
+            <h3 className="text-2xl font-bold mb-2">Forfait Pro</h3>
+            <p className="text-gray-400 text-sm mb-6">Pour les entreprises en croissance</p>
+            <div className="text-4xl font-bold text-white mb-6">
+              99€<span className="text-lg text-gray-400 font-normal">/mois</span>
+            </div>
+            <ul className="space-y-4 mb-8 text-gray-300 flex-grow">
+              <li className="flex items-center gap-3">
+                <span className="text-accent">✓</span> Gestion complète
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-accent">✓</span> Déclarations TVA
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-accent">✓</span> Bilan annuel
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-accent">✓</span> Support prioritaire
+              </li>
+            </ul>
+            <Button href="mailto:alexiaentreprise@gmail.com?subject=Devis Forfait Pro" variant="primary" className="w-full justify-center bg-accent hover:bg-accent-hover border-transparent">
+              Choisir ce forfait
+            </Button>
+          </div>
+
+          {/* Premium */}
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col hover:shadow-xl transition-shadow relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-1 bg-accent"></div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">Forfait Premium</h3>
+            <p className="text-gray-500 text-sm mb-6">Accompagnement intégral</p>
+            <div className="text-4xl font-bold text-primary mb-6">
+              149€<span className="text-lg text-gray-500 font-normal">/mois</span>
+            </div>
+            <ul className="space-y-4 mb-8 text-gray-600 flex-grow">
+              <li className="flex items-center gap-3">
+                <span className="text-green-500">✓</span> Tout inclus (Gestion + TVA + Bilan)
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-green-500">✓</span> Conseils illimités
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-green-500">✓</span> Optimisation fiscale
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-green-500">✓</span> Tableau de bord mensuel
+              </li>
+            </ul>
+            <Button href="mailto:alexiaentreprise@gmail.com?subject=Devis Forfait Premium" variant="secondary" className="w-full justify-center">
+              Choisir ce forfait
+            </Button>
+          </div>
         </div>
-      </footer>
+      </Section>
+
+      {/* Types d'entreprise */}
+      <Section className="bg-gray-50">
+        <SectionHeading
+          title="Nous accompagnons tous les statuts"
+          subtitle="Une expertise adaptée à votre forme juridique"
+          className="mb-16"
+        />
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+          {["SASU", "EURL", "SARL", "SAS", "EI", "Micro-Entreprise"].map((type) => (
+            <div key={type} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 font-bold text-primary hover:bg-primary hover:text-white transition-all cursor-default">
+              {type}
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Testimonials */}
+      <Section className="bg-white">
+        <SectionHeading
+          title="Ce que disent nos clients"
+          subtitle="Témoignages"
+        />
+
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
+          {[
+            { name: "Marc D.", text: "Une équipe comptable réactive et très claire dans ses explications. Je recommande.", img: "/client4.png" },
+            { name: "Amina T.", text: "Très pro ! Ils m’ont aidée à structurer ma micro-entreprise dès le début.", img: "/client5.png" },
+            { name: "Julien P.", text: "Service comptable impeccable, toujours disponible pour répondre à mes questions.", img: "/client6.png" }
+          ].map((avis, i) => (
+            <div key={i} className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                  <Image src={avis.img} alt={avis.name} fill className="object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">{avis.name}</p>
+                  <div className="text-accent text-sm">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-gray-600 italic">"{avis.text}"</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Call to Action */}
+      <Section className="bg-primary text-white text-center">
+        <h2 className="text-3xl font-bold mb-6">Prêt à simplifier votre comptabilité ?</h2>
+        <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
+          Contactez-nous dès aujourd'hui pour un devis gratuit et personnalisé.
+        </p>
+        <div className="flex justify-center gap-4">
+          <Button href="mailto:alexiaentreprise@gmail.com" variant="primary" className="bg-accent hover:bg-accent-hover text-white">
+            Demander un devis
+          </Button>
+          <Button href="tel:0652755294" variant="outline">
+            Nous appeler
+          </Button>
+        </div>
+      </Section>
+
+      <Footer />
     </div>
   );
 }

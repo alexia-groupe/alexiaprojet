@@ -1,119 +1,143 @@
 "use client";
 import Image from "next/image";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Section from "../../components/ui/Section";
+import SectionHeading from "../../components/ui/SectionHeading";
+import Button from "../../components/ui/Button";
+import FeatureCard from "../../components/ui/FeatureCard";
 
 export default function Multiservices() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      {/* HEADER */}
-      <header className="flex justify-between items-center px-8 py-4 bg-or shadow-md fixed w-full top-0 z-50">
-        <div className="flex items-center space-x-3">
-          <Image src="/alexia-groupe.png" alt="Logo Alexia Groupe" width={150} height={150} />
-          <h1 className="text-2xl font-bold text-blue-700">Alexia Multiservices</h1>
-        </div>
-        <nav className="space-x-6 text-gray-700 font-medium">
-          <a href="/" className="hover:text-blue-600">Accueil</a>
-          <a href="/compta" className="hover:text-blue-600">Alexia Compta</a>
-          <a href="/vtc" className="hover:text-blue-600">Alexia VTC</a>
-        </nav>
-      </header>
+      <Header />
 
-      {/* CONTENU PRINCIPAL */}
-      <main className="flex flex-col items-center justify-center text-center flex-grow pt-28 px-6">
-        <h2 className="text-4xl font-bold mb-4 text-blue-700">Votre Partenaire Travaux & Services</h2>
-        <p className="text-lg text-gray-600 mb-8 max-w-3xl">
-          Alexia Multiservices propose des solutions sur mesure pour vos besoins en électricité, plomberie, climatisation, sécurité et entretien.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-6 mt-8 max-w-6xl">
-          <Image src="/multi.jpg" alt="Travaux multiservices" width={290} height={200} className="rounded-lg shadow" />
-          <Image src="/multi2.jpg" alt="Plomberie et électricité" width={900} height={200} className="rounded-lg shadow" />
-          <Image src="/multi3.jpg" alt="Équipe technique" width={290} height={250} className="rounded-lg shadow" />
+      {/* Hero Section */}
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-800 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/multi2.jpg"
+            alt="Travaux et Maintenance"
+            fill
+            className="object-cover opacity-25"
+          />
+          <div className="absolute inset-0 bg-gray-900/40 mix-blend-multiply"></div>
         </div>
 
-        <section className="mt-12 bg-white shadow-lg rounded-xl p-6 w-full max-w-4xl">
-          <h3 className="text-2xl font-semibold mb-4 text-blue-700">Nos Prestations</h3>
-          <ul className="text-gray-700 space-y-2 text-left">
-            <li>🔌 Électricité – installation, dépannage et mise aux normes</li>
-            <li>🚰 Plomberie – entretien, réparation et rénovation</li>
-            <li>❄️ Climatisation/Chauffage – pose et maintenance</li>
-            <li>🔒 Sécurité – alarmes, caméra, vidéosurveillance et contrôle d’accès</li>
-            <li>🏭 Contrat d'entretien et de maintenance</li>
-          </ul>
-        </section>
-
-        <a
-          href="mailto:alexiaentreprise@gmail.com"
-          className="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold transition"
-        >
-          📞Demander une intervention 
-        </a>
-      </main>
-
-{/* AVIS CLIENTS */}
-<section className="mt-16 w-full max-w-6xl mx-auto px-6">
-  <h3 className="text-3xl font-bold text-center mb-8 text-blue-700">
-    ⭐ Avis de nos clients – Alexia Multiservices
-  </h3>
-
-  <div className="grid md:grid-cols-3 gap-6">
-
-    {/* AVIS 1 */}
-    <div className="bg-white shadow-lg rounded-xl p-6">
-      <div className="flex items-center mb-3">
-        <Image src="/client9.png" alt="Client" width={50} height={50} className="rounded-full" />
-        <div className="ml-3">
-          <p className="font-semibold">Sarah L.</p>
-          <p className="text-yellow-500">★★★★★</p>
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            Votre Partenaire <span className="text-accent">Travaux & Services</span>
+          </h1>
+          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+            Une expertise unique pour tous vos besoins en électricité, plomberie, climatisation et rénovation. Réactivité et travail soigné garantis.
+          </p>
+          <Button href="#prestations" variant="primary">
+            Découvrir nos solutions
+          </Button>
         </div>
-      </div>
-      <p className="text-gray-600">
-        Intervention rapide et travail soigné. Mon installation électrique est comme neuve.
-      </p>
-    </div>
+      </section>
 
-    {/* AVIS 2 */}
-    <div className="bg-white shadow-lg rounded-xl p-6">
-      <div className="flex items-center mb-3">
-        <Image src="/client8.png" alt="Client" width={50} height={50} className="rounded-full" />
-        <div className="ml-3">
-          <p className="font-semibold">Louis R.</p>
-          <p className="text-yellow-500">★★★★★</p>
+      {/* Prestations Section */}
+      <Section id="prestations" className="bg-white">
+        <SectionHeading
+          title="Nos Domaines d'Intervention"
+          subtitle="Une offre complète pour l'habitat et l'entreprise"
+        />
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          {[
+            { title: "Électricité", desc: "Installation, mise aux normes et dépannage urgence 7j/7.", bg: "bg-blue-50", icon: "⚡" },
+            { title: "Plomberie", desc: "Réparation de fuites, débouchage et rénovation sanitaire.", bg: "bg-cyan-50", icon: "🚰" },
+            { title: "Climatisation", desc: "Installation de systèmes de chauffage et maintenance annuelle.", bg: "bg-orange-50", icon: "❄️" },
+            { title: "Sécurité", desc: "Alarmes, vidéosurveillance et contrôle d'accès pour votre sérénité.", bg: "bg-red-50", icon: "🔒" },
+          ].map((item, i) => (
+            <div key={i} className={`p-8 rounded-2xl ${item.bg} hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-100 group`}>
+              <div className="text-4xl mb-6 transform group-hover:scale-110 transition-transform">{item.icon}</div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-6">{item.desc}</p>
+              <a href="#contact" className="text-primary font-semibold text-sm group-hover:text-accent transition-colors flex items-center">
+                Demander un devis <span className="ml-2">→</span>
+              </a>
+            </div>
+          ))}
         </div>
-      </div>
-      <p className="text-gray-600">
-        Très bon service pour la climatisation. Professionnels et efficaces.
-      </p>
-    </div>
+      </Section>
 
-    {/* AVIS 3 */}
-    <div className="bg-white shadow-lg rounded-xl p-6">
-      <div className="flex items-center mb-3">
-        <Image src="/client7.png" alt="Client" width={50} height={50} className="rounded-full" />
-        <div className="ml-3">
-          <p className="font-semibold">Patrick M.</p>
-          <p className="text-yellow-500">★★★★★</p>
-        </div>
-      </div>
-      <p className="text-gray-600">
-        Travail impeccable. Plomberie réparée en moins d’une heure. Merci !
-      </p>
-    </div>
-
-  </div>
-</section>
-
-      {/* FOOTER */}
-      <footer className="bg-gray-900 text-white py-8 mt-12">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <p className="mb-2">📞 06 52 75 52 94</p>
-          <div className="flex justify-center space-x-6 mt-4">
-            <a href="https://www.facebook.com/" target="_blank"><Image src="/facebook.png" alt="Facebook" width={28} height={28} /></a>
-            <a href="https://linkedin.com/company/alexiagroupe" target="_blank"><Image src="/linkedin.png" alt="LinkedIn" width={28} height={28} /></a>
-            <a href="https://instagram.com/alexiagroupe" target="_blank"><Image src="/instagram.png" alt="Instagram" width={28} height={28} /></a>
+      {/* Maintenance Contract Highlight */}
+      <Section className="bg-gray-100">
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2">
+          <div className="relative h-64 md:h-auto">
+            <Image src="/multi3.jpg" alt="Équipe technique" fill className="object-cover" />
           </div>
-          <p className="text-gray-400 text-sm mt-4">© 2025 Alexia Multiservices - Tous droits réservés</p>
+          <div className="p-8 md:p-12 flex flex-col justify-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Contrats de Maintenance</h3>
+            <p className="text-gray-600 mb-6">
+              Pour les professionnels et les copropriétés, nous proposons des contrats d'entretien annuels. Assurez la pérennité de vos installations et bénéficiez d'une priorité d'intervention.
+            </p>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-center gap-3 text-sm text-gray-700">
+                <span className="text-green-500 font-bold">✓</span> Visites de contrôle régulières
+              </li>
+              <li className="flex items-center gap-3 text-sm text-gray-700">
+                <span className="text-green-500 font-bold">✓</span> Dépannage prioritaire sous 4h
+              </li>
+              <li className="flex items-center gap-3 text-sm text-gray-700">
+                <span className="text-green-500 font-bold">✓</span> Rapport d'intervention détaillé
+              </li>
+            </ul>
+            <Button href="mailto:alexiaentreprise@gmail.com?subject=Contrat Maintenance" variant="outline" className="self-start text-primary border-primary hover:bg-primary hover:text-white">
+              Nous contacter
+            </Button>
+          </div>
         </div>
-      </footer>
+      </Section>
+
+      {/* Testimonials */}
+      <Section className="bg-white">
+        <SectionHeading
+          title="Ils nous font confiance"
+          subtitle="Témoignages"
+        />
+
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
+          {[
+            { name: "Sarah L.", text: "Intervention rapide et travail soigné. Mon installation électrique est comme neuve.", img: "/client9.png" },
+            { name: "Louis R.", text: "Très bon service pour la climatisation. Professionnels et efficaces.", img: "/client8.png" },
+            { name: "Patrick M.", text: "Travail impeccable. Plomberie réparée en moins d’une heure. Merci !", img: "/client7.png" }
+          ].map((avis, i) => (
+            <div key={i} className="bg-gray-50 p-6 rounded-xl border border-gray-100">
+              <div className="flex items-center gap-4 mb-4">
+                <div className="relative w-12 h-12 rounded-full overflow-hidden">
+                  <Image src={avis.img} alt={avis.name} fill className="object-cover" />
+                </div>
+                <div>
+                  <p className="font-bold text-gray-900">{avis.name}</p>
+                  <div className="text-accent text-sm">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-gray-600 italic">"{avis.text}"</p>
+            </div>
+          ))}
+        </div>
+      </Section>
+
+      {/* Call to Action */}
+      <Section className="bg-accent text-white text-center" id="contact">
+        <h2 className="text-3xl font-bold mb-6">Une urgence ? Un projet ?</h2>
+        <p className="text-white/90 mb-8 max-w-2xl mx-auto">
+          Nos équipes techniques sont prêtes à intervenir. Contactez-nous pour une estimation gratuite.
+        </p>
+        <div className="flex justify-center gap-4">
+          <Button href="tel:0652755294" variant="secondary" className="bg-white text-accent hover:bg-gray-100 border-transparent">
+            Appeler le 06 52 75 52 94
+          </Button>
+          <Button href="mailto:alexiaentreprise@gmail.com" variant="outline" className="border-white text-white hover:bg-white/20">
+            Demander un devis en ligne
+          </Button>
+        </div>
+      </Section>
+
+      <Footer />
     </div>
   );
 }
