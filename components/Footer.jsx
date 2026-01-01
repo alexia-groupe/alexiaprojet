@@ -14,7 +14,7 @@ export default function Footer() {
                             <div className="bg-white/10 p-2 rounded-lg">
                                 {/* Using a placeholder or the actual text if logo isn't ideal for dark bg */}
                                 <span className="font-heading font-bold text-2xl text-white">
-                                    Alexia <span className="text-accent">Groupe</span>
+                                    Alexia <span className="text-accent">France</span>
                                 </span>
                             </div>
                         </Link>
@@ -97,7 +97,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                    <p>© {currentYear} Alexia Groupe. Tous droits réservés.</p>
+                    <p>© {currentYear} Alexia France. Tous droits réservés.</p>
                     <div className="flex gap-6">
                         <Link href="#" className="hover:text-white transition-colors">Mentions Légales</Link>
                         <Link href="#" className="hover:text-white transition-colors">Politique de Confidentialité</Link>

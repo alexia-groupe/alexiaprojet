@@ -26,10 +26,10 @@ export default function Home() {
             Excellence & Polyvalence
           </span>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Alexia <span className="text-accent">Groupe</span>
+            Alexia <span className="text-accent">France</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            Votre partenaire de confiance unique pour la gestion comptable, le transport privé et les services multiservices.
+            Votre partenaire de confiance unique pour la gestion comptable, le transport privé et les multiservices.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="#services" variant="primary" className="text-lg px-8 py-4">
@@ -135,7 +135,7 @@ export default function Home() {
           </div>
 
           <div className="order-1 md:order-2" id="about">
-            <span className="text-accent font-bold tracking-wider uppercase text-sm">À Propos d'Alexia Groupe</span>
+            <span className="text-accent font-bold tracking-wider uppercase text-sm">À Propos d'Alexia France</span>
             <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-6">L'excellence au service de vos besoins</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               Fondé sur des valeurs de rigueur et de professionnalisme, Alexia Groupe est né de la volonté d'offrir un accompagnement complet aux particuliers et aux entreprises.

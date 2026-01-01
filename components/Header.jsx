@@ -41,7 +41,7 @@ export default function Header() {
           </div>
           <span className={`font-heading font-bold text-xl tracking-tight transition-colors ${isScrolled ? "text-primary" : "text-white"
             }`}>
-            Alexia <span className="text-accent">Groupe</span>
+            Alexia <span className="text-accent">France</span>
           </span>
         </Link>
 
