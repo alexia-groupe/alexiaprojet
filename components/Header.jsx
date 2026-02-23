@@ -34,7 +34,7 @@ export default function Header() {
           <div className="relative w-10 h-10 overflow-hidden rounded-lg shadow-sm group-hover:shadow-md transition-all">
             <Image
               src="/logo.png"
-              alt="Logo Alexia Entreprise"
+              alt="Logo Alexia Groupe"
               fill
               className="object-cover"
             />
