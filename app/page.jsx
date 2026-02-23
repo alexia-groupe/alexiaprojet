@@ -26,7 +26,7 @@ export default function Home() {
             Excellence & Polyvalence
           </span>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Alexia <span className="text-accent">France</span>
+            Alexia <span className="text-accent">Entreprise</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
             Votre partenaire de confiance unique pour la gestion comptable, le transport privé et les multiservices.
@@ -53,7 +53,7 @@ export default function Home() {
           <FeatureCard
             title="Alexia Compta"
             description="Cabinet d'expertise comptable pour la gestion financière, fiscale et sociale de votre entreprise. Des forfaits adaptés aux créateurs et PME."
-            imageSrc="/compta.jpg"
+            imageSrc="/comptable8.png"
             href="/compta"
             delay={0}
           />
@@ -61,7 +61,7 @@ export default function Home() {
           <FeatureCard
             title="Alexia VTC"
             description="Service de transport de personnes avec chauffeur. Déplacements professionnels, privés, et transferts aéroport 24h/24 et 7j/7."
-            imageSrc="/vtc.jpg"
+            imageSrc="/vtc2.jpg"
             href="/vtc"
             delay={100}
           />
@@ -69,7 +69,7 @@ export default function Home() {
           <FeatureCard
             title="Alexia Multiservices"
             description="Solutions complètes pour vos travaux : électricité, plomberie, climatisation, rénovation et installation de systèmes de sécurité."
-            imageSrc="/multi4.jpg"
+            imageSrc="/slide.jpg"
             href="/multiservices"
             delay={200}
           />
@@ -135,10 +135,10 @@ export default function Home() {
           </div>
 
           <div className="order-1 md:order-2" id="about">
-            <span className="text-accent font-bold tracking-wider uppercase text-sm">À Propos d'Alexia France</span>
+            <span className="text-accent font-bold tracking-wider uppercase text-sm">À Propos d'Alexia Entreprise</span>
             <h2 className="text-4xl font-bold text-gray-900 mt-2 mb-6">L'excellence au service de vos besoins</h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Fondé sur des valeurs de rigueur et de professionnalisme, Alexia Groupe est né de la volonté d'offrir un accompagnement complet aux particuliers et aux entreprises.
+              Fondé sur des valeurs de rigueur et de professionnalisme, Alexia Entreprise est né de la volonté d'offrir un accompagnement complet aux particuliers et aux entreprises.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               Que ce soit pour sécuriser votre gestion comptable, assurer vos déplacements en toute sérénité ou réaliser vos projets de travaux, nos équipes dédiées s'engagent à vous fournir une qualité de service irréprochable.
