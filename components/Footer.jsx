@@ -14,7 +14,7 @@ export default function Footer() {
                             <div className="bg-white/10 p-2 rounded-lg">
                                 {/* Using a placeholder or the actual text if logo isn't ideal for dark bg */}
                                 <span className="font-heading font-bold text-2xl text-white">
-                                    Alexia <span className="text-accent">France</span>
+                                    Alexia <span className="text-accent">Entreprise</span>
                                 </span>
                             </div>
                         </Link>
