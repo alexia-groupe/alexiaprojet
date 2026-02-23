@@ -19,7 +19,7 @@ export default function Multiservices() {
             src="/electric.jpg"
             alt="Travaux et Maintenance"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-25"
           />
           <div className="absolute inset-0 bg-gray-900/40 mix-blend-multiply"></div>
         </div>
