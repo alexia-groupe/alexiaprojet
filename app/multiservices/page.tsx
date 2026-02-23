@@ -16,10 +16,10 @@ export default function Multiservices() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-800 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/multi2.jpg"
-            alt="Travaux et Maintenance"
+            src="/"
+            alt=""
             fill
-            className="object-cover opacity-25"
+            className="object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gray-900/40 mix-blend-multiply"></div>
         </div>

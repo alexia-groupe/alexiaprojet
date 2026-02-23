@@ -20,7 +20,7 @@ export default function VTC() {
             fill
             className="object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-1000 via-gray-900/10 to-transparent"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
