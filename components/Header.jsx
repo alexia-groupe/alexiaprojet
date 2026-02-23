@@ -34,14 +34,14 @@ export default function Header() {
           <div className="relative w-10 h-10 overflow-hidden rounded-lg shadow-sm group-hover:shadow-md transition-all">
             <Image
               src="/logo.png"
-              alt="Logo Alexia Groupe"
+              alt="Logo Alexia Entreprise"
               fill
               className="object-cover"
             />
           </div>
           <span className={`font-heading font-bold text-xl tracking-tight transition-colors ${isScrolled ? "text-primary" : "text-white"
             }`}>
-            Alexia <span className="text-accent">France</span>
+            Alexia <span className="text-accent">Entreprise</span>
           </span>
         </Link>
 
