@@ -13,7 +13,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Alexia France",
+  title: "Alexia Entreprise",
   description: "Votre partenaire de confiance dans chaque domaine : Comptabilité, VTC, Multiservices.",
 };
 
