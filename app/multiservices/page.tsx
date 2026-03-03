@@ -29,7 +29,7 @@ export default function Multiservices() {
             Votre Partenaire <span className="text-accent">Travaux & Services</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Alexia Multiservice vous propose une expertise unique pour tous vos besoins en électricité, plomberie, climatisation et rénovation. Réactivité et travail soigné garantis.
+           Une expertise unique pour tous vos besoins en électricité, plomberie, climatisation et rénovation. Réactivité et travail soigné garantis.
           </p>
           <Button href="#prestations" variant="primary">
             Découvrir nos solutions
