@@ -53,7 +53,7 @@ export default function Home() {
           <FeatureCard
             title="Alexia Compta"
             description="Cabinet d'expertise comptable pour la gestion financière, fiscale et sociale de votre entreprise. Des forfaits adaptés aux créateurs et PME."
-            imageSrc="/bel2.png"
+            imageSrc="/bel3.png"
             href="/compta"
             delay={0}
           />
@@ -69,7 +69,7 @@ export default function Home() {
           <FeatureCard
             title="Alexia Multiservices"
             description="Solutions complètes pour vos travaux : électricité, plomberie, climatisation, rénovation et installation de systèmes de sécurité."
-            imageSrc="/ser.png"
+            imageSrc="/ser2.png"
             href="/multiservices"
             delay={200}
           />
