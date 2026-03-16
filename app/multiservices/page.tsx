@@ -16,7 +16,7 @@ export default function Multiservices() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-gray-800 text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/electric.jpg"
+            src="/mm.png"
             alt="Travaux et Maintenance"
             fill
             className="object-cover opacity-50"
@@ -29,7 +29,7 @@ export default function Multiservices() {
             Votre Partenaire <span className="text-accent">Travaux & Services</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-           Aexia Multiservice vous propose une expertise unique pour tous vos besoins en électricité, plomberie, chauffage, climatisation. Réactivité et travail soigné garantis.
+           Alexia Multiservices vous propose une expertise unique pour tous vos besoins en électricité, plomberie, chauffage, climatisation. Réactivité et travail soigné garantis.
           </p>
           <Button href="#prestations" variant="primary">
             Découvrir nos solutions
