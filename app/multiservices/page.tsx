@@ -18,6 +18,8 @@ export default function Multiservices() {
           <Image
             src="/"
             alt=""
+            src="/electric.jpg"
+            alt="Travaux et Maintenance"
             fill
             className="object-cover opacity-50"
           />
@@ -29,7 +31,7 @@ export default function Multiservices() {
             Votre Partenaire <span className="text-accent">Travaux & Services</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Une expertise unique pour tous vos besoins en électricité, plomberie, climatisation et rénovation. Réactivité et travail soigné garantis.
+           Aexia Multiservice vous propose une expertise unique pour tous vos besoins en électricité, plomberie, chauffage, climatisation. Réactivité et travail soigné garantis.
           </p>
           <Button href="#prestations" variant="primary">
             Découvrir nos solutions
@@ -48,7 +50,7 @@ export default function Multiservices() {
           {[
             { title: "Électricité", desc: "Installation, mise aux normes et dépannage urgence 7j/7.", bg: "bg-blue-50", icon: "⚡" },
             { title: "Plomberie", desc: "Réparation de fuites, débouchage et rénovation sanitaire.", bg: "bg-cyan-50", icon: "🚰" },
-            { title: "Climatisation", desc: "Installation de systèmes de chauffage et maintenance annuelle.", bg: "bg-orange-50", icon: "❄️" },
+            { title: "Chauffage et Climatisation", desc: "Installation de systèmes de chauffage/climatisation et maintenance préventive et curative.", bg: "bg-orange-50", icon: "❄️" },
             { title: "Sécurité", desc: "Alarmes, vidéosurveillance et contrôle d'accès pour votre sérénité.", bg: "bg-red-50", icon: "🔒" },
           ].map((item, i) => (
             <div key={i} className={`p-8 rounded-2xl ${item.bg} hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-100 group`}>

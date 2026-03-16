@@ -31,7 +31,7 @@ export default function VTC() {
             Votre Chauffeur Privé <br /><span className="text-white">24h/24 et 7j/7</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            L'élégance et la ponctualité pour tous vos déplacements. Profitez d'un confort absolu à bord de nos véhicules.
+            Alexia VTC, c'est l'élégance et la ponctualité pour tous vos déplacements. Profitez d'un confort absolu à bord de nos véhicules.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="https://wa.me/33652755294" variant="primary" className="bg-green-600 hover:bg-green-700 text-white border-transparent">

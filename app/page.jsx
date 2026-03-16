@@ -53,7 +53,11 @@ export default function Home() {
           <FeatureCard
             title="Alexia Compta"
             description="Cabinet d'expertise comptable pour la gestion financière, fiscale et sociale de votre entreprise. Des forfaits adaptés aux créateurs et PME."
+<<<<<<< HEAD
             imageSrc="/comptable8.png"
+=======
+            imageSrc="/bel.png"
+>>>>>>> 40f32e887193c09e6abb64431733f6deb4ae2cf5
             href="/compta"
             delay={0}
           />
