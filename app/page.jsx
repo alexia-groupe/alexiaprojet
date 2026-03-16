@@ -69,7 +69,7 @@ export default function Home() {
           <FeatureCard
             title="Alexia Multiservices"
             description="Solutions complètes pour vos travaux : électricité, plomberie, climatisation, rénovation et installation de systèmes de sécurité."
-            imageSrc="/ser2.png"
+            imageSrc="/ser4.png"
             href="/multiservices"
             delay={200}
           />
