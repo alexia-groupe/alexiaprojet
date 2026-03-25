@@ -56,7 +56,7 @@ export default function Footer() {
                         <ul className="space-y-4 text-sm text-gray-400">
                             <li className="flex items-start gap-3">
                                 <span className="text-accent">📍</span>
-                                <span>12 allée de la Madeleine<br />92220 BAGNEUX</span>
+                                <span>1 Rue des Rosiers<br />92340 BOURG-LA-REINE</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-accent">📞</span>
@@ -68,7 +68,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-accent">🕒</span>
-                                <span>Mar - Sam: 9h - 19h</span>
+                                <span>Lun - Sam: 8h - 18h</span>
                             </li>
                         </ul>
                     </div>
