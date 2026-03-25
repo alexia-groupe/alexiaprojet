@@ -112,7 +112,7 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="font-bold text-gray-900">Notre Siège</p>
-                    <p className="text-gray-600">12 allée de la Madeleine<br />92220 BAGNEUX</p>
+                    <p className="text-gray-600">1 Rue des Rosiers <br />92340 BOURG-LA-REINE</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">
@@ -122,7 +122,7 @@ export default function Home() {
                   <div>
                     <p className="font-bold text-gray-900">Téléphone</p>
                     <p className="text-gray-600">06 52 75 52 94</p>
-                    <p className="text-xs text-gray-500 mt-1">Du mardi au samedi de 9h à 19h</p>
+                    <p className="text-xs text-gray-500 mt-1">Du Lundi au Samedi de 8h à 18h</p>
                   </div>
                 </li>
               </ul>
