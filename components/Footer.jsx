@@ -64,7 +64,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-accent">✉️</span>
-                                <a href="mailto:alexiaentreprise@gmail.com" className="hover:text-accent transition-colors">contact@alexiaentreprise.fr</a>
+                                <a href="mailto:alexiaentreprise@gmail.com" className="hover:text-accent transition-colors">alexiaentreprise@gmail.com</a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <span className="text-accent">🕒</span>
