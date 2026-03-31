@@ -15,7 +15,7 @@ export default function Compta() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-primary text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/compta.jpg"
+            src="/bel4.png"
             alt="Expertise Comptable"
             fill
             className="object-cover opacity-300"
