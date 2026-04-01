@@ -15,10 +15,10 @@ export default function Compta() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center bg-primary text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/anta2.jpg"
+            src="/comp1.png"
             alt="Expertise Comptable"
             fill
-            className="object-cover opacity-100"
+            className="object-cover opacity-500"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent"></div>
         </div>
