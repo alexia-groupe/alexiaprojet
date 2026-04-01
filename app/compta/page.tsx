@@ -18,9 +18,9 @@ export default function Compta() {
             src="/comp1.png"
             alt="Expertise Comptable"
             fill
-            className="object-cover opacity-500"
+            className="object-cover opacity-100"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-20">
