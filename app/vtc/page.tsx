@@ -112,7 +112,7 @@ export default function VTC() {
   <div className="max-w-7xl mx-auto px-6">
 
     <SectionHeading
-      title="Réserver votre trajet"
+      title="Réserver votre trajet en ligne"
       subtitle="Réservation rapide"
       align="center"
     />
