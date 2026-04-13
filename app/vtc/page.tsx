@@ -108,7 +108,7 @@ export default function VTC() {
         </div>
       </Section>
 {/* 👉 FORMULAIRE ICI */}
-  <Section className="bg-gray py-16 border-t">
+  <Section className="bg-gray py-20 border-t">
   <div className="max-w-7xl mx-auto px-6">
 
     <SectionHeading
