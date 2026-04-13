@@ -107,7 +107,87 @@ export default function VTC() {
           </div>
         </div>
       </Section>
+{/* 👉 FORMULAIRE ICI */}
+  <Section className="bg-gray py-16 border-t">
+  <div className="max-w-7xl mx-auto px-6">
 
+    <SectionHeading
+      title="Réserver votre trajet"
+      subtitle="Réservation rapide"
+      align="center"
+    />
+
+    <form
+      action="https://formspree.io/f/xojyqnvj"
+      method="POST"
+      className="mt-10 flex flex-wrap gap-4 items-center justify-center"
+    >
+      <input type="hidden" name="_subject" value="Nouvelle réservation VTC 🚗" />
+
+      <input
+        type="text"
+        name="nom"
+        placeholder="Nom"
+        required
+        className="p-3 border rounded-lg w-[150px]"
+      />
+
+      <input
+        type="tel"
+        name="telephone"
+        placeholder="Téléphone"
+        required
+        className="p-3 border rounded-lg w-[150px]"
+      />
+
+      <input
+        type="text"
+        name="depart"
+        placeholder="Lieu de Départ"
+        required
+        className="p-3 border rounded-lg w-[180px]"
+      />
+
+      <input
+        type="text"
+        name="destination"
+        placeholder="Destination"
+        required
+        className="p-3 border rounded-lg w-[180px]"
+      />
+
+      <input
+        type="date"
+        name="date"
+        required
+        className="p-3 border rounded-lg"
+      />
+
+      <input
+        type="time"
+        name="heure"
+        required
+        className="p-3 border rounded-lg"
+      />
+
+      <input
+        type="message"
+        name="detail"
+        placeholder="Détails (vol, bagages, passagers)"
+        required
+        className="p-6 border rounded-lg w-[300px]"
+      />
+
+      <button
+        type="submit"
+        className="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition"
+      >
+        Réserver maintenant
+      </button>
+    </form>
+  </div>
+</Section>
+      
       {/* Testimonials */}
       <Section className="bg-white">
         <SectionHeading title="L'avis de nos passagers" subtitle="Satisfaction Client" />
