@@ -145,7 +145,7 @@ export default function VTC() {
         name="depart"
         placeholder="Lieu de Départ"
         required
-        className="p-3 border rounded-lg w-[180px]"
+        className="p-3 border rounded-lg w-[150px]"
       />
 
       <input
@@ -153,12 +153,13 @@ export default function VTC() {
         name="destination"
         placeholder="Destination"
         required
-        className="p-3 border rounded-lg w-[180px]"
+        className="p-3 border rounded-lg w-[150px]"
       />
 
       <input
         type="date"
         name="date"
+        placeholder="Date"
         required
         className="p-3 border rounded-lg"
       />
@@ -166,6 +167,7 @@ export default function VTC() {
       <input
         type="time"
         name="heure"
+        placeholder="Heure"
         required
         className="p-3 border rounded-lg"
       />
@@ -175,7 +177,7 @@ export default function VTC() {
         name="detail"
         placeholder="Détails (vol, bagages, passagers)"
         required
-        className="p-6 border rounded-lg w-[300px]"
+        className="p-6 border rounded-lg w-[400px]"
       />
 
       <button
